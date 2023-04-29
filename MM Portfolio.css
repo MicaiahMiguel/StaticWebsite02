@@ -1,0 +1,388 @@
+/* CSS for navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2C3333;
+  color: #7dce13;
+  padding: 1rem;
+}
+
+.about1 p {
+  margin: auto;
+  font-size: larger;
+}
+.about1 {
+  display: flex;
+  align-items: flex-start;
+  color: #c7e9b0;
+  padding-left: 1rem;
+  margin-bottom: 0%;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.aboutContainer {
+  display: flex;
+  width: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255, 0.2);
+  padding: 1rem;
+  margin: 0.5rem;
+  margin-top: 0%;
+  border-radius: 16px;
+}
+ #imageabout {
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+ }
+html {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2C3333;
+}
+html {
+   scroll-behavior: smooth;
+}
+.logodiv {
+  display: flex;
+  flex-direction: row;
+  color: #7dce13;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+#MMD {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  border-radius: 45%;
+  padding: 1rem;
+}
+#pic1 {
+  width: 100%;
+  border-radius: 50%;
+}
+.description1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  /* From https://css.glass */
+  color:#fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #7dce13;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.image01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.description3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #7dce13;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+}
+.description2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #7dce13;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+}
+.shrink :hover {
+  transform: translateY(-20px);
+  transition: .5s;
+ }
+ .conTact :hover {
+  transform: translateY(-5px);
+  transition: .5s;
+ }
+/* Css for Projecs...*/
+ .proJects p {
+   align-items: center;
+  font-size: larger;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #c7e9b0;
+ }
+.row {
+  width: 100%;
+  text-align: center;
+}
+
+.columns {
+  width: 33%;
+  min-width: 240px;
+  height: 150px;
+  vertical-align: top; /*Fix for different     height elements*/
+  margin-bottom: 8px;
+  display: inline-block;
+  color: #c7e9b0;
+  background-image: url("bodybackground.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+@media screen and (max-width: 680px) {
+  .columns {
+    width: 100%;
+  }
+  .conTact {
+    justify-content: space-around;
+  }
+}
+.shrink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin-left: 1rem;
+}
+nav ul li:first-child {
+  margin-left: 0;
+}
+nav a {
+  color: #7dce13;
+  font-size: large;
+  font-weight: bold;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+/* CSS for burger menu */
+.burger {
+  display: none;
+}
+.burger-menu.active {
+  display: flex;
+}
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  position: column;
+  align-items: center;
+  top: 5rem;
+  right: 0;
+  background-color: #12bcda;
+  background: linear-gradient(to left, #eae7b1, #c7e9b0);
+  color: #fff;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+.burger-menu a {
+  color: #463a13;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+/*CSS for contact page*/
+  .contactpage p {
+  align-items: center;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #c7e9b0;
+  }
+  .conTact {
+    display: flex;
+   justify-content: center;
+   margin-bottom: 2rem ;
+  }
+  .contactpageicon {
+    height: 30px;
+    width: 30px;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+  }
+/* CSS for footer */
+.site-footer {
+  background: #2C3333;
+}
+/* CSS for footer */
+footer {
+  color: #7dce13;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 14px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+ul {
+  align-items: center;
+  padding-left: 0%;
+  padding-right: 1rem;
+}
+
+li {
+  display: inline-flex;
+}
+
+a {
+  color: #7dce13;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  padding-top: 1rem;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+    min-width: 220px;
+  } 
+  #imageabout {
+    width: 220px;
+    height: 220px;
+  }
+  .conTact {
+    display: flex;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+/*Css for Footer icons*/
+.footericon {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+}
+#homeicon {
+  height: 25px;
+  width: 25px;
+  padding: 1rem;
+}
+#abouticon {
+  height: 25px;
+  width: 25px;
+  padding: 1rem;
+}
+#portfolioicon {
+  height: 25px;
+  width: 25px;
+  padding: 1rem;
+}
+#contacticon {
+  height: 25px;
+  width: 25px;
+  padding: 1rem;
+}
+.logoimg {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #7dce13;
+  font-weight: 100;
+}
+/* CSS for main content */
+.main-content {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #7dce13;
+  padding: 2rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* CSS for responsiveness */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .burger-menu.active {
+    display: none;
+  }
+}
+@media only screen and (max-width: 831px) {
+  .shrink {
+    display: inline-block;
+  }
+}
+
+
